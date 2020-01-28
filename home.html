@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My first Bulma website</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+  </head>
+  <body>
+    <section class="hero is-medium">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <h1 class="title is-2 is-spaced">
+                Hello Bulma!
+              </h1>
+              <h2 class="subtitle is-4">
+                  Congratulations! You're running the <strong>Bulma start</strong> project.
+                  <br>
+                  It includes everything you need to <strong>build your own website</strong> with Bulma.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <div class="content">
+              <h3>What's included</h3>
+              <p>
+                The <code>npm</code> dependencies included in <code>package.json</code> are:
+              </p>
+              <ul>
+                <li>
+                  <code><a href="https://github.com/jgthms/bulma">bulma</a></code>
+                </li>
+                <li>
+                  <code><a href="https://github.com/sass/node-sass">node-sass</a></code> to compile your own Sass file
+                </li>
+                <li>
+                  <code><a href="https://github.com/postcss/postcss-cli">postcss-cli</a></code> and <code><a href="https://github.com/postcss/autoprefixer">autoprefixer</a></code> to add support for older browsers
+                </li>
+                <li>
+                  <code><a href="https://babeljs.io/docs/usage/cli/">babel-cli</a></code>,
+                  <code><a href="https://github.com/babel/babel-preset-env">babel-preset-env</a></code>
+                  and
+                  <code><a href="https://github.com/jmcriffey/babel-preset-es2015-ie">babel-preset-es2015-ie</a></code>
+                  for compiling ES6 JavaScript files
+                </li>
+              </ul>
+              <p>
+                Apart from <code>package.json</code>, the following files are included:
+              </p>
+              <ul>
+                <li>
+                  <code>.babelrc</code> configuration file for <a href="https://babeljs.io/">Babel</a>
+                </li>
+                <li>
+                  <code>.gitignore</code> common <a href="https://git-scm.com/">Git</a> ignored files
+                </li>
+                <li>
+                  <code>index.html</code> this HTML5 file
+                </li>
+                <li>
+                  <code>_sass/main.scss</code> a basic SCSS file that <strong>imports Bulma</strong> and explains how to <strong>customize</strong> your styles, and compiles to <code>css/main.css</code>
+                </li>
+                <li>
+                  <code>_javascript/main.js</code> an ES6 JavaScript that compiles to <code>lib/main.js</code>
+                </li>
+              </ul>
+              <h3>Try it out!</h3>
+              <p>
+                To see if your setup works, follow these steps:
+              </p>
+              <ol>
+                <li>
+                  <p>
+                    <strong>Move</strong> to this directory:
+                    <br>
+                    <pre><code>cd bulma-start</code></pre>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Install</strong> all dependencies:
+                    <br>
+                    <pre><code>npm install</code></pre>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Start</strong> the CSS and JS watchers:
+                    <br>
+                    <pre><code>npm start</code></pre>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <strong>Edit</strong> <code>_sass/main.scss</code> by adding the following rule at the <strong>end</strong> of the file:
+                    <br>
+                    <pre><span style="color: #22863a;">html</span> {
+  <span style="color: #005cc5;"><span style="color: #005cc5;">background-color</span></span>: <span style="color: #24292e">$green</span>;
+}</pre>
+                  </p>
+                </li>
+              </ol>
+              <p>
+                The page background should turn <strong class="has-text-success">green</strong>!
+              </p>
+              <h3>Get started</h3>
+              <p>
+                You're <strong>ready</strong> to create your own designs with Bulma. Just edit or duplicate this page, or simply create a new one!
+                <br>
+                For example, this page is <strong>only</strong> built with the following <strong>Bulma elements</strong>:
+              </p>
+            </div>
+            <table class="table is-bordered is-fullwidth">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>CSS class</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Columns</th>
+                  <td>
+                    <code><a href="http://bulma.io/documentation/columns/basics">columns</a></code>
+                    <code><a href="http://bulma.io/documentation/columns/basics">column</a></code>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Layout</th>
+                  <td>
+                    <code><a href="http://bulma.io/documentation/layout/section">section</a></code>
+                    <code><a href="http://bulma.io/documentation/layout/container">container</a></code>
+                    <code><a href="http://bulma.io/documentation/layout/footer">footer</a></code>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Elements</th>
+                  <td>
+                    <code><a href="http://bulma.io/documentation/elements/button">button</a></code>
+                    <code><a href="http://bulma.io/documentation/elements/content">content</a></code>
+                    <code><a href="http://bulma.io/documentation/elements/title">title</a></code>
+                    <code><a href="http://bulma.io/documentation/elements/title">subtitle</a></code>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Form</th>
+                  <td>
+                    <code><a href="http://bulma.io/documentation/form/general">field</a></code>
+                    <code><a href="http://bulma.io/documentation/form/general">control</a></code>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Helpers</th>
+                  <td>
+                    <code><a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-centered</a></code>
+                    <code><a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-weight-semibold</a></code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="content">
+              <p>
+                If you want to <strong>learn more</strong>, follow these links:
+              </p>
+            </div>
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="button is-medium is-primary" href="http://bulma.io">
+                  <strong class="has-text-weight-semibold">Bulma homepage</strong>
+                </a>
+              </p>
+              <p class="control">
+                <a class="button is-medium is-link" href="http://bulma.io/documentation/overview/start/">
+                  <strong class="has-text-weight-semibold">Documentation</strong>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer has-text-centered">
+      <div class="container">
+         <div class="columns">
+          <div class="column is-8-desktop is-offset-2-desktop">
+            <p>
+              <strong class="has-text-weight-semibold">
+                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.3</a>
+              </strong>
+            </p>
+            <p>
+              <small>
+                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+              </small>
+            </p>
+            <p style="margin-top: 1rem;">
+              <a href="http://bulma.io">
+                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="lib/main.js"></script>
+   <!-- START NAV -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="../">
+                        <img src="../images/bulma.png" alt="Logo">
+                    </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                <span></span>
+                <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item is-active">
+                            Home
+                        </a>
+                    <a class="navbar-item">
+                            Examples
+                        </a>
+                    <a class="navbar-item">
+                            Features
+                        </a>
+                    <a class="navbar-item">
+                            Team
+                        </a>
+                    <a class="navbar-item">
+                            Archives
+                        </a>
+                    <a class="navbar-item">
+                            Help
+                        </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                                Account
+                            </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                    Dashboard
+                                </a>
+                            <a class="navbar-item">
+                                    Profile
+                                </a>
+                            <a class="navbar-item">
+                                    Settings
+                                </a>
+                            <hr class="navbar-divider">
+                            <div class="navbar-item">
+                                Logout
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAV -->
+
+    <section class="hero is-info is-medium is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed eiusmod tempor incididunt ut labore et dolore magna aliqua</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <!-- START ARTICLE FEED -->
+        <section class="articles">
+            <div class="column is-8 is-offset-2">
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content has-text-centered">
+                                <p class="title article-title">Introducing a new feature for paid subscribers</p>
+                                <div class="tags has-addons level-item">
+                                    <span class="tag is-rounded is-info">@skeetskeet</span>
+                                    <span class="tag is-rounded">May 10, 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p>Non arcu risus quis varius quam quisque. Dictum varius duis at consectetur lorem. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. </p>
+                            <p>Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Accumsan lacus vel facilisis volutpat. Non sodales neque sodales ut etiam.
+                                Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.</p>
+                            <h3 class="has-text-centered">How to properly center tags in bulma?</h3>
+                            <p> Proper centering of tags in bulma is done with class: <pre>level-item</pre>
+                                Voluptat ut farmacium tellus in metus vulputate. Feugiat in fermentum posuere urna nec. Pharetra convallis posuere morbi leo urna molestie.
+                                Accumsan lacus vel facilisis volutpat est velit egestas. Fermentum leo vel orci porta. Faucibus interdum posuere lorem ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-center">
+                                <img src="http://www.radfaces.com/images/avatars/daria-morgendorffer.jpg" class="author-image" alt="Placeholder image">
+                            </div>
+                            <div class="media-content has-text-centered">
+                                <p class="title article-title">Sapien eget mi proin sed 🔱</p>
+                                <p class="subtitle is-6 article-subtitle">
+                                    <a href="#">@daria</a> on February 17, 2018
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas. Sapien eget mi proin sed. Sit amet mattis vulputate enim.
+                            </p>
+                            <p>
+                                Commodo ullamcorper a lacus vestibulum sed arcu. Fermentum leo vel orci porta non. Proin fermentum leo vel orci porta non pulvinar. Imperdiet proin fermentum leo vel. Tortor posuere ac ut consequat semper viverra. Vestibulum lectus mauris ultrices eros.
+                            </p>
+                            <h3 class="has-text-centered">Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Cras tincidunt lobortis feugiat vivamus.</h3>
+                            <p>
+                                In eu mi bibendum neque egestas congue quisque egestas diam. Enim nec dui nunc mattis enim ut tellus. Ut morbi tincidunt augue interdum velit euismod in. At in tellus integer feugiat scelerisque varius morbi enim nunc. Vitae suscipit tellus mauris a diam.
+                                Arcu non sodales neque sodales ut etiam sit amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+                <!-- START PROMO BLOCK -->
+                <section class="hero is-info is-bold is-small promo-block">
+                    <div class="hero-body">
+                        <div class="container">
+                            <h1 class="title">
+                                <i class="fa fa-bell-o"></i> Nemo enim ipsam voluptatem quia.</h1>
+                            <span class="tag is-black is-medium is-rounded">
+                                    Natus error sit voluptatem
+                                </span>
+                        </div>
+                    </div>
+                </section>
+                <!-- END PROMO BLOCK -->
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-center">
+                                <img src="http://www.radfaces.com/images/avatars/angela-chase.jpg" class="author-image" alt="Placeholder image">
+                            </div>
+                            <div class="media-content has-text-centered">
+                                <p class="title article-title">Cras tincidunt lobortis feugiat vivamus.</p>
+                                <p class="subtitle is-6 article-subtitle">
+                                    <a href="#">@angela</a> on October 7, 2017
+                                </p>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan lacus vel facilisis volutpat est velit egestas. Sapien eget mi proin sed. Sit amet mattis vulputate enim.
+                            </p>
+                            <p>
+                                Commodo ullamcorper a lacus vestibulum sed arcu. Fermentum leo vel orci porta non. Proin fermentum leo vel orci porta non pulvinar. Imperdiet proin fermentum leo vel. Tortor posuere ac ut consequat semper viverra. Vestibulum lectus mauris ultrices eros.
+                            </p>
+                            <h3 class="has-text-centered">“Everyone should be able to do one card trick, tell two jokes, and recite three poems, in case they are ever trapped in an elevator.”</h3>
+                            <p>
+                                In eu mi bibendum neque egestas congue quisque egestas diam. Enim nec dui nunc mattis enim ut tellus. Ut morbi tincidunt augue interdum velit euismod in. At in tellus integer feugiat scelerisque varius morbi enim nunc. Vitae suscipit tellus mauris a diam.
+                                Arcu non sodales neque sodales ut etiam sit amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+              </div>
+
+        </section>
+        <!-- END ARTICLE FEED -->
+        </div>
+        <script async type="text/javascript" src="../js/bulma.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        //The first argument are the elements to which the plugin shall be initialized
+        //The second argument has to be at least a empty object or a object with your desired options
+        OverlayScrollbars(document.querySelectorAll("body"), { });
+        });
+        </script>
+  <nav class="navbar is-white topNav">
+			<div class="container">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="../">
+						<img src="../images/bulma.png" width="112" height="28">
+					</a>
+					<div class="navbar-burger burger" data-target="topNav">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div id="topNav" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item" href="cover.html">Home</a>
+						<a class="navbar-item" href="landing.html">Landing</a>
+						<a class="navbar-item" href="blog.html">Blog</a>
+						<a class="navbar-item" href="instaAlbum.html">Album</a>
+						<a class="navbar-item" href="kanban[search].html">Kanban</a>
+						<a class="navbar-item" href="search.html">Search</a>
+						<a class="navbar-item" href="tabs.html">Tabs</a>
+					</div>
+					<div class="navbar-end">
+						<div class="navbar-item">
+							<div class="field is-grouped">
+								<p class="control">
+									<a class="button is-small">
+										<span class="icon">
+											<i class="fa fa-user-plus"></i>
+										</span>
+										<span>
+											Register
+										</span>
+									</a>
+								</p>
+								<p class="control">
+									<a class="button is-small is-info is-outlined">
+										<span class="icon">
+											<i class="fa fa-user"></i>
+										</span>
+										<span>Login</span>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<nav class="navbar is-white">
+			<div class="container">
+				<div class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item is-active" href="#">Popular</a>
+						<a class="navbar-item" href="#">Recent</a>
+						<a class="navbar-item" href="#">Rising</a>
+					</div>
+					<div class="navbar-end">
+						<div class="navbar-item">
+							<input class="input" type="search" placeholder="Search forum...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="container">
+			<div class="columns">
+				<div class="column is-3">
+					<a class="button is-primary is-block is-alt is-large" href="#">New Post</a>
+					<aside class="menu">
+						<p class="menu-label">
+							Tags
+						</p>
+						<ul class="menu-list">
+							<li><span class="tag is-primary is-medium ">Dashboard</span></li>
+							<li><span class="tag is-link is-medium ">Customers</span></li>
+							<li><span class="tag is-light is-danger is-medium ">Authentication</span></li>
+							<li><span class="tag is-dark is-medium ">Payments</span></li>
+							<li><span class="tag is-success is-medium ">Transfers</span></li>
+							<li><span class="tag is-warning is-medium ">Balance</span></li>
+							<li><span class="tag is-medium ">Question</span></li>
+						</ul>
+					</aside>
+				</div>
+				<div class="column is-9">
+					<div class="box content">
+						<article class="post">
+							<h4>Bulma: How do you center a button in a box?</h4>
+							<div class="media">
+								<div class="media-left">
+									<p class="image is-32x32">
+										<img src="http://bulma.io/images/placeholders/128x128.png">
+									</p>
+								</div>
+								<div class="media-content">
+									<div class="content">
+										<p>
+											<a href="#">@jsmith</a> replied 34 minutes ago &nbsp;
+											<span class="tag">Question</span>
+										</p>
+									</div>
+								</div>
+								<div class="media-right">
+									<span class="has-text-grey-light"><i class="fa fa-comments"></i> 1</span>
+								</div>
+							</div>
+						</article>
+						<article class="post">
+							<h4>How can I make a bulma button go full width?</h4>
+							<div class="media">
+								<div class="media-left">
+									<p class="image is-32x32">
+										<img src="http://bulma.io/images/placeholders/128x128.png">
+									</p>
+								</div>
+								<div class="media-content">
+									<div class="content">
+										<p>
+											<a href="#">@red</a> replied 40 minutes ago &nbsp;
+											<span class="tag">Question</span>
+										</p>
+									</div>
+								</div>
+								<div class="media-right">
+									<span class="has-text-grey-light"><i class="fa fa-comments"></i> 0</span>
+								</div>
+							</div>
+						</article>
+						<article class="post">
+							<h4>TypeError: Data must be a string or a buffer when trying touse vue-bulma-tabs</h4>
+							<div class="media">
+								<div class="media-left">
+									<p class="image is-32x32">
+										<img src="http://bulma.io/images/placeholders/128x128.png">
+									</p>
+								</div>
+								<div class="media-content">
+									<div class="content">
+										<p>
+											<a href="#">@jsmith</a> replied 53 minutes ago &nbsp;
+											<span class="tag">Question</span>
+										</p>
+									</div>
+								</div>
+								<div class="media-right">
+									<span class="has-text-grey-light"><i class="fa fa-comments"></i> 13</span>
+								</div>
+							</div>
+						</article>
+						<article class="post">
+							<h4>How to vertically center elements in Bulma?</h4>
+							<div class="media">
+								<div class="media-left">
+									<p class="image is-32x32">
+										<img src="http://bulma.io/images/placeholders/128x128.png">
+									</p>
+								</div>
+								<div class="media-content">
+									<div class="content">
+										<p>
+											<a href="#">@brown</a> replied 3 hours ago &nbsp;
+											<span class="tag">Question</span>
+										</p>
+									</div>
+								</div>
+								<div class="media-right">
+									<span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+								</div>
+							</div>
+						</article>
+						<article class="post">
+							<h4>I'm trying to use hamburger menu on bulma css, but it doesn't work. What is wrong?</h4>
+							<div class="media">
+								<div class="media-left">
+									<p class="image is-32x32">
+										<img src="http://bulma.io/images/placeholders/128x128.png">
+									</p>
+								</div>
+								<div class="media-content">
+									<div class="content">
+										<p>
+											<a href="#">@hamburgler</a> replied 5 hours ago &nbsp;
+											<span class="tag">Question</span>
+										</p>
+									</div>
+								</div>
+								<div class="media-right">
+									<span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+								</div>
+							</div>
+						</article>
+						<article class="post">
+							<h4>How to make tiles wrap with Bulma CSS?</h4>
+							<div class="media">
+								<div class="media-left">
+									<p class="image is-32x32">
+										<img src="http://bulma.io/images/placeholders/128x128.png">
+									</p>
+								</div>
+								<div class="media-content">
+									<div class="content">
+										<p>
+											<a href="#">@rapper</a> replied 3 hours ago &nbsp;
+											<span class="tag">Question</span>
+										</p>
+									</div>
+								</div>
+								<div class="media-right">
+									<span class="has-text-grey-light"><i class="fa fa-comments"></i> 2</span>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="content has-text-centered">
+					<div class="columns is-mobile is-centered">
+						<div class="field is-grouped is-grouped-multiline">
+							<div class="control">
+								<div class="tags has-addons">
+									<a class="tag is-link" href="https://github.com/BulmaTemplates/bulma-templates">Bulma Templates</a>
+									<span class="tag is-light">Daniel Supernault</span>
+								</div>
+							</div>
+							<div class="control">
+								<div class="tags has-addons">
+									<a class="tag is-link">The source code is licensed</a>
+									<span class="tag is-light">MIT &nbsp;<i class="fa fa-github"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script async type="text/javascript" src="../js/bulma.js"></script>
+  </body>
+</html>
+
