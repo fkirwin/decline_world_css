@@ -1,6 +1,9 @@
 @charset "utf-8";
 @import "../node_modules/bulma/sass/utilities/initial-variables.sass";
 
+$footer-background-color: $black;
+$navbar-background-color: $black;
+$navbar-item-color: $grey-lighter;
 @import "../node_modules/bulma/bulma.sass";
 @import "../node_modules/bulma/sass/utilities/_all";
 @import "../node_modules/bulma/sass/base/_all";
